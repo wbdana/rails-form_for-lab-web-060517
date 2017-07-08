@@ -1,0 +1,9 @@
+<h1>Student Edit Form</h1>
+
+<%= form_for @student, method: :patch do |f| %>
+  <label>Student First Name:</label><br>
+  <%= f.text_field :first_name %>
+  <label>Student Last Name:</label><br>
+  <%= f.text_field :last_name %><br>
+  <%= f.submit %>
+<% end %>
